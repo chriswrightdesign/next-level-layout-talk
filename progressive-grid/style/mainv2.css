@@ -1,0 +1,166 @@
+/**
+ * Reset
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background: #fbfbfb;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+/**
+ * Floated grid layout
+ */
+
+.grid {
+    margin-left: -1rem;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.grid__item {
+    flex: 0 0 auto;
+    float: left;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    width: 25%;
+}
+
+.grid__item:nth-child(4n+1){
+    clear: left;
+}
+
+/**
+ * Simplified version of supports queries
+ */
+
+@supports (display: flex) {
+    .grid {
+        display: flex;
+    }
+
+    .grid__item {
+         display: flex;
+    }
+}
+
+@supports (display: grid) {
+    .grid {
+        display: grid;
+    }
+
+    .grid__item {
+        width: auto;
+    }
+}
+
+/**
+ * Card
+ */
+
+.card {
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    color: #484e5c;
+    display: inherit;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.card__image {
+    margin-bottom: 1rem;
+}
+
+.card__content {
+    display: inherit;
+    flex: 1 0 auto;
+    flex-direction: inherit;
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.5;
+
+
+}
+
+.card__heading {
+    font-size: 1.5em;
+}
+
+.card__text {
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+}
+
+.card__button {
+    background-color: #67B3A0;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    font-size: 1em;
+    margin-top: auto;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    width: 100%:
+
+    &:hover {
+        background-color: #2dbe64;
+    }
+}
+
+/**
+ * Container
+ */
+
+.container {
+    margin: 2em auto;
+    max-width: calc(900px + 25vw);
+}
+
+/**
+ * Fluid image
+ */
+
+.fluid-image {
+    height: auto;
+    width: 100%;
+}

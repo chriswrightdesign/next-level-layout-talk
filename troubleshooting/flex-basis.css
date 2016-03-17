@@ -1,0 +1,13 @@
+
+
+
+.flex__child {
+    flex: 1 0 auto;
+
+    //is the same as
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+

@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background: #fbfbfb;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.l-container {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 1em;
+}
+
+/**
+ * Flexbox classes
+ */
+
+.flex-wrap--250 {
+    width: 250px;
+}
+
+.flex-wrap--400 {
+    width: 400px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex > * {
+    max-width: 100%;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-grow-shrink {
+    flex: 1 1 auto;
+}
+
+.flex-grow {
+    flex: 1 0 auto;
+}
+
+flex-grow-2 {
+    flex: 2 0 auto;
+}
+
+.flex-grow-3 {
+    flex: 3 0 auto;
+}
+/**
+ *  Column splitting
+ */
+
+
+
+
+
+
+.columns > p {
+    -moz-column-count: auto;
+    -webkit-column-count: auto;
+    column-count: auto;
+}
+
+
+
+
+.columns > p {
+
+    -moz-column-width: 20em;
+    -webkit-column-width: 20em;
+    column-width: 20em;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+}
+
+/**
+ * Grid widths based on thirds
+ */
+
+
+
+.grid__full {
+    width: 100%;
+}
+
+@media all and (min-width:40em) {
+    .grid__units--1 {
+        width: 33.333%;
+    }
+
+    .grid__units--2 {
+        width: 66.666%;
+    }
+}
+
+/**
+ * Gutters
+ */
+
+.gutters--offset {
+    margin-left: -1rem;
+}
+
+.gutters > .gutter__child {
+    padding-left: 1rem;
+}
+
+.gutter__child > * {
+    margin-bottom: 1rem;
+}
+
+/**
+ * Empty Guide
+ */
+
+.guide:empty {
+    align-items: center;
+    background: #eee;
+    border: 1px dashed #ddd;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    min-height: 25vh;
+    opacity: 0.5;
+}
+
+.guide:empty:after {
+    content: '+';
+    color: #ddd;
+    font-size: 2em;
+}
+
+/**
+ * Card
+ */
+
+.card {
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.card__content {
+    font-size: 0.9em;
+    padding: 1.2em;
+}
+
+.card__content > h1 {
+    font-size: calc(1.4em + 0.1vw);
+    font-family: Oswald, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card__content > p {
+    font-family: Droid Sans, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/**
+ * Button
+ */
+
+.button {
+    background: #333;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin: auto auto 0;
+    max-width: 30em;
+    font-size: 1em;
+    padding: 1em 1.75em;
+    text-align: center;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.button:hover,
+.button:focus {
+    background: #555;
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+/**
+ * Fluid image
+ */
+
+.fluid-image {
+    height: auto;
+    max-width: 100vw;
+    width: 100%;
+}
+
+.guide > * {
+    animation: appear 0.3s ease both;
+}
+
+.l-full-width {
+    width: 100%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+

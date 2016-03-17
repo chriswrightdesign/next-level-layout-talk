@@ -1,0 +1,152 @@
+/**
+ * Reset
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background: #fbfbfb;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+/**
+ * Floated grid layout
+ */
+
+
+.grid__item {
+    float: left;
+    width: 25%;
+}
+
+.grid__item:nth-child(4n+1){
+    clear: left;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid__item {
+    display: flex;
+    flex: 0 0 auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__content {
+    display: inherit;
+    flex-direction: inherit;
+    flex: 1 0 auto;
+}
+
+
+
+/**
+ * Card
+ */
+
+.teal {
+    background-color: rgb(29, 171, 131);
+}
+
+.emerald {
+    background-color: #218080;
+}
+
+.navy {
+    background-color: rgb(29, 29, 51);
+}
+
+.sky {
+    background-color: rgb(207, 234, 237);
+}
+
+.card {
+    color: #484e5c;
+    padding: 2.5rem;
+    width: 100%;
+}
+
+.card__image {
+    margin-bottom: 2.5rem;
+}
+
+.card__content {
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.5;
+
+
+}
+
+.card__heading {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.card__text {
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+}
+
+/**
+ * Container
+ */
+
+.container {
+
+}
+
+/**
+ * Fluid image
+ */
+
+.fluid-image {
+    display: block;
+    margin: auto;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    text-align: center;
+
+}

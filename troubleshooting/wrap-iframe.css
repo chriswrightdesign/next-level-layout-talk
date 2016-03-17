@@ -1,0 +1,13 @@
+
+
+.wrap-iframe {
+    display: flex;
+}
+
+.wrap-iframe__child {
+    flex: 1 0 auto;
+}
+
+.video-container {
+    /* Standard responsive 16:9 / 4:3 technique */
+}

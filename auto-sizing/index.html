@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Auto sizing components</title>
+        <link rel="stylesheet" href="style/main.css">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="flex-viewport-center">
+                <form id="radio-segmented-control" class="t-neutral">
+                    <div class="segmented-control">
+                        <legend class="segmented-control__title">Pick an option</legend>
+                        <div class="segmented-control__inner">
+                            <input class="segmented-control__input" id="radio_option1" type="radio" name="segment" value="Option 1" />
+                            <label class="segmented-control__label segmented-control__label--start" for="radio_option1">Option 1</label>
+                            <input class="segmented-control__input" id="radio_option2" type="radio" name="segment" value="Option 2" />
+
+                            <label class="segmented-control__label" for="radio_option2">Option 2</label>
+                            <input class="segmented-control__input" id="radio_option3" type="radio" name="segment" value="Option 3" checked="true" />
+                            <label class="segmented-control__label segmented-control__label--end" for="radio_option3">Option 3</label>
+                        </div>
+                    </div>
+                </form>
+                <form id="radio-segmented-control2" class="t-neutral">
+                    <div class="segmented-control">
+                        <legend class="segmented-control__title">Pick an option</legend>
+                        <div class="segmented-control__inner">
+                            <input class="segmented-control__input" id="radio_option1a" type="radio" name="segment2" value="Option 1" />
+                            <label class="segmented-control__label segmented-control__label--start" for="radio_option1a">Option 1</label>
+                            <input class="segmented-control__input" id="radio_option2a" type="radio" name="segment2" value="Option 2" />
+                            <label class="segmented-control__label" for="radio_option2a">Option 2</label>
+                        </div>
+                    </div>
+                </form>
+
+                <form id="radio-segmented-control3" class="t-neutral">
+                    <div class="segmented-control">
+                        <legend class="segmented-control__title">Pick an option</legend>
+                        <div class="segmented-control__inner">
+                            <input class="segmented-control__input" id="radio_option1b" type="radio" name="segment3" value="Option 1" />
+                            <label class="segmented-control__label segmented-control__label--start" for="radio_option1b">Option 1</label>
+                            <input class="segmented-control__input" id="radio_option2b" type="radio" name="segment3" value="Option 2" />
+                            <label class="segmented-control__label" for="radio_option2b">Option 2</label>
+
+                            <input class="segmented-control__input" id="radio_option3b" type="radio" name="segment3" value="Option 3" />
+                            <label class="segmented-control__label" for="radio_option3b">Option 3</label>
+                            <input class="segmented-control__input" id="radio_option4b" type="radio" name="segment3" value="Option 3" />
+                            <label class="segmented-control__label" for="radio_option4b">Option 4</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Roboto+Slab:400,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+    </body>
+</html>

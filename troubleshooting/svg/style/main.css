@@ -1,0 +1,101 @@
+/**
+ * Reset
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background: #fbfbfb;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+* {
+     box-sizing: border-box;
+}
+.container {
+   margin: 0 auto;
+     border: 5px solid #111;
+     max-width: 600px;
+}
+
+.flex-column {
+     flex-direction: column;
+}
+.heading {
+    text-align: center;
+}
+
+.svg-container {
+    height: 0;
+    padding: 0;
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.svg {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+
+/**
+ * Alternatively make it flex-direction: column;
+ * and you won't need grow
+ */
+
+
+.flex-container {
+     display: flex;
+}
+
+
+.flex-container__child {
+     flex: 1 0 auto;
+}
+
+

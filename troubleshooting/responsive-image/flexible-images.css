@@ -1,0 +1,13 @@
+
+
+
+
+
+
+
+
+.flexible-image-workaround {
+  height: auto;
+  max-width: 100vw; // [1]
+  width: 100%; // [1]
+}

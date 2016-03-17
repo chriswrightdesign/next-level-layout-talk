@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Iframe</title>
+        <link rel="stylesheet" href="style/main.css">
+    </head>
+    <body>
+
+    <div class="wrapper">
+
+    <h2>Flex container</h2>
+    <div class="container l-contain-600">
+        <div class="flex-container">
+            <div class="video-container">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/et8xNAc2ic8" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <h2>Standard container</h2>
+    <div class="container l-contain-600">
+
+         <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/et8xNAc2ic8" frameborder="0" allowfullscreen></iframe>
+         </div>
+    </div>
+
+    <h2>Nested block in flex container</h2>
+    <div class="container l-contain-600">
+      <div class="flex-container">
+         <div>
+              <div class="video-container">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/et8xNAc2ic8" frameborder="0" allowfullscreen></iframe>
+              </div>
+         </div>
+         </div>
+    </div>
+
+    <h2>Nested block in flex container with flex: 1 0 auto</h2>
+    <div class="container l-contain-600">
+      <div class="flex-container">
+         <div class="flex-container__child">
+              <div class="video-container">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/et8xNAc2ic8" frameborder="0" allowfullscreen></iframe>
+              </div>
+         </div>
+         </div>
+    </div>
+
+    <h2>Nested block in flex container with flex: 1 0 auto, where flex is a column</h2>
+    <div class="container l-contain-600">
+      <div class="flex-container flex-column">
+         <div class="flex-container__child">
+              <div class="video-container">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/et8xNAc2ic8" frameborder="0" allowfullscreen></iframe>
+              </div>
+         </div>
+        </div>
+    </div>
+    </div>
+    </body>
+</html>

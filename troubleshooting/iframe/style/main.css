@@ -1,0 +1,94 @@
+/**
+ * Reset
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background: #fbfbfb;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+* {
+     box-sizing: border-box;
+}
+.container {
+    border: 1px solid #f0f;
+    margin: 0 auto;
+}
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.l-contain-600 {
+    max-width: 600px;
+
+}
+.flex-column {
+     flex-direction: column;
+}
+
+.video-container {
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top:0;
+    width: 100%;
+}
+
+
+
+.flex-container {
+    display: flex;
+
+}
+.flex-container__child {
+    flex: 1 0 auto;
+}

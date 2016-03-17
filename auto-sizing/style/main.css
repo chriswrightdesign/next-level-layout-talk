@@ -1,0 +1,140 @@
+/**
+ * Reset
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background: #fbfbfb;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+
+
+body {
+  font-family: "Helvetica Neue";
+  font-weight: 300;
+}
+
+.container {
+    max-width: 500px;
+    margin: 5em auto;
+    display: flex;
+    flex-direciton: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Theming */
+
+    /* If the current object is clicked/tapped */
+.t-neutral .segmented-control input[type="radio"]:checked + label {
+    background: #180f0b;
+    border-color: #20120a;
+    color: #fff;
+}
+
+/* If the control has keyboard focus */
+.t-neutral .segmented-control input[type="radio"]:focus + label {
+    background: #444;
+    border-color: #00ffff;
+    color: #fff;
+    outline:thin dotted;
+}
+
+.t-neutral .segmented-control input[type="radio"]:active + label {
+    color: #fff;
+}
+
+.t-neutral .segmented-control__label {
+    border-bottom: 1px solid #180f0b;
+    border-top: 1px solid #180f0b;
+    background: #eee;
+    color: #111;
+}
+
+.t-neutral .segmented-control__label {
+    border-color: #111;
+}
+
+/* Component */
+.segmented-control__label {
+    border-left: 1px solid #ddd;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    flex: 1 1 auto;
+    padding: 0.5rem 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+.segmented-control__label {
+    padding: 0.75rem;
+}
+
+
+.segmented-control__input {
+    clip: rect(0, 0, 0, 0);
+    opacity: 0;
+    position: absolute;
+    visibility: none;
+}
+
+
+.segmented-control__inner {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.segmented-control__label:first-of-type {
+    border: 1px solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-right: none;
+}
+.segmented-control__label:last-of-type {
+    border:1px solid;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 5px;
+}

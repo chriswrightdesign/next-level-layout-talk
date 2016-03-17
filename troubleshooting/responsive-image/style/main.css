@@ -1,0 +1,93 @@
+/**
+ * Reset
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background: #fbfbfb;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.l-viewport {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.flex__child {
+  display: flex;
+}
+
+.heading {
+  text-align: center;
+}
+
+.image-container {
+  max-width: 500px;
+}
+
+
+
+.fluid-image {
+  height: auto;
+  max-width: 100%;
+}
+
+.fluid-image-flex {
+  height: auto;
+  max-width: 100vw;
+  width: 100%;
+}
+
+
+
+.wrapper {
+  border: 5px solid #111;
+}

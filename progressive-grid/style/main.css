@@ -1,0 +1,182 @@
+/**
+ * Reset
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background: #fbfbfb;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+/**
+ * Floated grid layout
+ */
+
+.grid {
+    margin-left: -1rem;
+}
+
+.grid__item {
+    float: left;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    width: 25%;
+}
+
+.grid__item:nth-child(4n+1){
+    clear: left;
+}
+
+/**
+ * Flexbox variation - Get equal height columns
+ * Option - Cut out IE11/10 (not necessary)
+ */
+
+@supports (display: flex) {
+
+
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .grid__item {
+         display: flex;
+         flex: 0 0 auto;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card__content {
+        display: inherit;
+        flex-direction: inherit;
+        flex: 1 0 auto;
+    }
+
+    .card__button {
+        margin-top: auto;
+    }
+
+
+}
+
+@supports (display: grid) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+    }
+
+    .grid__item {
+        width: auto;
+    }
+
+}
+
+/**
+ * Card
+ */
+
+.card {
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    color: #484e5c;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.card__image {
+    margin-bottom: 1rem;
+}
+
+.card__content {
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.5;
+
+
+}
+
+.card__heading {
+    font-size: 1.5em;
+}
+
+.card__text {
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+}
+
+.card__button {
+    background-color: #67B3A0;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    font-size: 1em;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    width: 100%:
+
+    &:hover {
+        background-color: #2dbe64;
+    }
+}
+
+/**
+ * Container
+ */
+
+.container {
+    margin: 2em auto;
+    max-width: calc(900px + 25vw);
+}
+
+/**
+ * Fluid image
+ */
+
+.fluid-image {
+    height: auto;
+    width: 100%;
+}
